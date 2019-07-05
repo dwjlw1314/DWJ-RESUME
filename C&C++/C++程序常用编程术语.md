@@ -12,3 +12,9 @@ BSS段是(Block Started by Symbol)缩写，该段只保存未初始化的变量�
 
 下图是ASCII码对照表
 ![image](https://github.com/dwjlw1314/DWJ-RESUME/raw/master/PictureSource/1.1.3.jpg)
+
+下图是常见类型提升
+![image](https://github.com/dwjlw1314/DWJ-RESUME/raw/master/PictureSource/1.1.4.jpg)
+
+在所有表达式中，每个char都被转换为int，float被转换成double。函数参数也是表达式，所以参数传递给函数时也发生转换。
+ANSI C表示如果编译器能够保证运算结果一致，可以忽略类型提升---这通常出现在表达式中存在常量操作数的情况

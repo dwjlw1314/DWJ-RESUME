@@ -10,6 +10,14 @@ eg: printf("exchange %.*s\n",exchange.len,exchange.value);
 valgrind -v --leak-check=full --tool=memcheck ./dataAccess
 ```
 
+指向指针的引用
+```
+int *p = nullptr;
+//ref是一个对指针p的引用；从右向左理解ref，离变量名最近的符号对变量有最直接的影响，因此下面表达式中
+ref是一个引用，符号*说明ref引用的是一个指针，最后指出ref引用的是一个int指针
+int *&ref = p;
+```
+
 在预处理过程中产生编译时错误信息一般用以下方式
 ```
 #if !defined(__cplusplus)
@@ -100,4 +108,56 @@ void* _memmove(void* dest, const void* src, size_t count)
 	//else(tmp_src==tmp_dest) 此时不进行任何操作
 	return dest;
 }
+```
+
+UNIX系统实现逐字符的输入方式(其他方式：curses函数库只提供基于字符的屏幕控制函数；中断驱动I/O)
+```
+1.stty终端实现方式，是一种间接阻塞模式
+int main(void) {
+	char c;
+	/* 终端字符驱动修改为一次一字符模式 */
+	system("stty raw -echo");
+	c = getchar();
+	/* 终端字符驱动模式还原到一次一行模式 */
+	system("stty cooked echo");
+}
+
+2.ioctl系统调用方式，非阻塞模式
+
+int kb()
+{
+	int i;
+	ioctl(0, FIONREAD, &i);
+	return i;
+}
+int main(void) {
+
+	char c = ' ';
+	system("stty raw -echo");
+	while(1)
+	{
+		if (kb())
+		{
+			c = getchar();
+		}
+	}
+	perror("run ");
+	system("stty cooked echo");
+}
+```
+
+使用指针从函数返回一个数组方式
+```
+1.声明和定义一个function函数，返回一个指向包含20个int元素的数组指针
+int (*function())[20]
+{
+	int (*p)[20];
+	p = malloc(20 * sizeof(int));
+	return p;
+}
+2.调用方法
+int (*p)[20];
+p = function();
+(*p)[3] = 5;
+3.或者使用结构体存储数组的方式进行返回
 ```
