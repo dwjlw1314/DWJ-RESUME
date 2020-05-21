@@ -161,3 +161,11 @@ p = function();
 (*p)[3] = 5;
 3.或者使用结构体存储数组的方式进行返回
 ```
+
+cmake和make编译选项
+```
+CMAKE_INSTALL_PREFIX=/opt     #指定安装路径
+CMAKE_BUILD_TYPE=Release      #编译release版本
+-DBUILD_SHARED_LIBS=1         #编译动态库
+make DESTDIR=/opt/ install    #指定安装路径
+```
