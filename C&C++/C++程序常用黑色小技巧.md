@@ -5,6 +5,12 @@ desc: 是以6位宽度，输出“1234567890”的前4个有效字符
 eg: printf("exchange %.*s\n",exchange.len,exchange.value);
 ```
 
+isprint判断输出
+```
+code: isprint('a');
+desc: 判断字符'a'是否为可打印字符（含空格）,可打印字符（0x20-0x7e）时，返回非零值，否则返回零
+```
+
 检查linux系统中程序内存是否泄漏
 ```
 valgrind -v --leak-check=full --tool=memcheck ./dataAccess
