@@ -190,6 +190,24 @@ call second.
 call data uninit.
 ```
 
+<font color=#FF0000 size=5> <p align="center">__attribute__((deprecated))和__declspec(deprecated)</p></font>
+
+code:
+```
+#if AV_GCC_VERSION_AT_LEAST(3,1)
+#    define attribute_deprecated __attribute__((deprecated))
+#elif defined(_MSC_VER)
+#    define attribute_deprecated __declspec(deprecated)
+#else
+#    define attribute_deprecated
+#endif
+```
+
+desc:
+```
+gcc和VC编译器分别使用__attribute__((deprecated))和__declspec(deprecated)来管理过时的代码
+```
+
 <font color=#FF0000 size=5> <p align="center">cdecl和stdcall的区别</p></font>
 
 code:
