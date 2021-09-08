@@ -236,3 +236,15 @@ windows的函数调用时需要用到栈(STACK，一种先入后出的存储结�
 当遇到这样的函数如fprintf()它的参数是可变的，不定长的，被调用者事先无法知道参数的长度，事后的清除工作也无法正常的进行，
 因此，这种情况只能使用__cdecl。如果程序中没有涉及可变参数，最好使用__stdcall关键字
 ```
+
+<font color=#FF0000 size=5> <p align="center">__VA_ARGS__</p></font>
+
+code:
+```
+#define LOGE(format, ...) av_log(NULL, AV_LOG_ERROR, format, ##__VA_ARGS__);
+```
+desc:
+```
+##__VA_ARGS__ 是一个可变参数的宏,是新的C99规范中新增的，目前似乎只有gcc支持（VC6.0的编译器不支持）
+宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用,否则会编译出错
+```
