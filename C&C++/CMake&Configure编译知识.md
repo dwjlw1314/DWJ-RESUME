@@ -2,7 +2,7 @@
 ```
 root@gjsy:~# cmake
 -D CMAKE_INSTALL_PREFIX=/opt
--DBUILD_SHARED_LIBS=ON
+-D BUILD_SHARED_LIBS=ON
 -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules
 -D WITH_CUDA=ON
 -D WITH_TBB=ON
@@ -11,7 +11,8 @@ root@gjsy:~# cmake
 -D WITH_CUBLAS=1
 -D WITH_QT=OFF
 -D WITH_FFMPEG=ON
--DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda/
+-D BUILD_opencv_world=ON  //编译融合所有so文件
+-D CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda/
 -D WITH_NVCUVID=ON
 -D BUILD_opencv_cudacodec=ON
 -D WITH_CUBLAS=ON
@@ -32,6 +33,8 @@ root@gjsy:~# ./configure
 --enable-cuvid
 --enable-ffnvcodec
 --enable-libnpp
+--disable-x86asm
+--enable-sdl  //生成ffplay，需要安装libsdl2-dev库
 --extra-cflags=-I/usr/local/cuda/include
 --extra-ldflags=-L/usr/local/cuda/lib64
 ```
