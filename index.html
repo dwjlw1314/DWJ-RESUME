@@ -140,55 +140,62 @@
                 <ul class="experience-list">
                     <li>
                         <h3>SOC(Security Operations Center)</h3>
-                        <p>软件环境：Liniux Debian 6.0、Windows 7  <br>
-						   开发工具：Eclipse、Slickedit、Visual Studio 2010 <br>
-						   责任描述：负责项目的规划、流程设计以及部分功能的实现，日志regex解析规则的编写 <br>
-						   项目描述：通过对系统内所有的资产信息进行收集、范式化、对资产进行管理的功能
+                        <p>软件环境：Liniux Debian 6.0、Windows 7  <br><br>
+          						   开发工具：Eclipse、Slickedit、Visual Studio 2010 <br><br>
+          						   责任描述：负责项目的规划、流程设计以及部分功能的实现，日志regex解析规则的编写 <br>
+          						   项目描述：通过对系统内所有的资产信息进行收集、范式化、对资产进行管理的功能
                             <br>
                         </p>
                     </li>
                     <li>
                         <h3>终端与内网安全管理系统</h3>
-                        <p>	软件环境：win2000、xp 、services2008、Windows 7 <br>
-          							开发工具：Visual Studio 2010 <br>
-          							责任描述：U盘文件隐藏驱动的开发和测试，一些BUG的修复 <br> <br>
+                        <p>	软件环境：win2000、xp 、services2008、Windows 7 <br><br>
+          							开发工具：Visual Studio 2010 <br><br>
+          							责任描述：U盘文件隐藏驱动的开发和测试，一些BUG的修复 <br>
           							项目描述：采用过滤驱动程序，开发实现基于FAT32/NTFS格式的U盘下的文件读写功能。实现过程如下：截获系统（windows）的文件创建和修改，使用windows系统API来实现隐藏指定后缀文件的功能。
                         截获系统（windows）的读写操作，如果是策略指定的后缀文件，则进行文件读写过滤。驱动层返回相应信息<br> <br>
-          							漏洞扫描管理系统：数据沟通的Interlayer发开和测试，单机补丁扫描器的开发通过openvas源码了解其扫描漏洞的方式和参数格式，Interlayer是一个承上启下的功能，通过接受java特有的指令格式，
-                        转换成openvas识别的指令格式，返回的数据通过进步一加密生成xml文件发送至java  <br> <br>
+          							漏洞扫描管理系统：中间层模块开发和测试，单机补丁扫描器开发。通过openvas源码了解其扫描漏洞的方式和参数格式，Interlayer是一个承上启下的功能模块，通过接受java特有的指令格式，
+                        转换成openvas识别的指令格式，返回的数据通过进步一加密生成xml文件发送至java，调用补丁服务下载补丁包安装  <br> <br>
                         </p>
                     </li>
                     <li>
                         <h3>云端上午平台界面重构</h3>
-                        <p>软件环境：Windows7  <br>
-          						   开发工具：QT Create <br>
+                        <p>软件环境：Windows7  <br><br>
+          						   开发工具：QT Create <br><br>
           						   责任描述：负责云端平台用户节点界面的qml重构 <br>
           						   项目描述：实现用户登录的规划和底层数据的通信，采用C++和qml语言，通过QT信号和slot来实现数据的响应，采用xml和http通用模块进行数据格式规范
                         </p>
                     </li>
                     <li>
                         <h3>sima视频接入模块</h3>
-                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br>
+                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br><br>
 							              开发工具：Eclipse、Visual Studio 2010 <br> <br>
-                            责任描述：linux下负载均衡(nginx，keepalived)和分布式缓存(redis)的集群部署，视频服务器的开发（进程内部使用sockerpair实现多路数据的并发），音视频编解码(接收设备端的g726和h264实时音视频流，通过ffmpeg实现g726转换aac,以及时间戳实现音视频同步，
-                            使用zeromq开源项目实现模块数据之间的解耦性)，视频控制，rtsp流实现视频转发（live555开源项目二次开发）
+                            责任描述：<br>
+                            1. linux下负载均衡(nginx，keepalived)和分布式缓存(redis)的集群部署<br>
+                            2. 视频服务器的开发（进程内部使用sockerpair实现多路数据的并发）<br>
+                            3. 音视频编解码（接入g726和h264音视频流，通过ffmpeg转换g726到aac,转换时间戳实现音视频同步）<br>
+                            4. 使用zeromq开源项目实现模块数据之间的解耦<br>
+                            5. live555开源项目二次开发，接受视频模块送入的ts格式数据包，进行封包处理，上层ocx控件拉流播放
                         </p>
                     </li>
-					<li>
+					               <li>
                         <h3>ANT二期数据接入开发</h3>
-                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br>
-							开发工具：Eclipse <br> <br>	责任描述：车载MDVR设备图像的接入，MDVR数据接入的二次开发(moduo库实现数据的实时接入)，底层数据接入与平台交互实现(rabbitmq开源项目)，oracle数据库主备中心数据维护，后期实现TCPCopy的数据流复制，实现开发环境和生产环境的数据一致性测试和压力测试，GPS数据解析和接收
+                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br><br>
+							              开发工具：Eclipse <br> <br>
+                            责任描述：车载MDVR设备图像的接入，MDVR数据接入的二次开发(moduo库实现数据的实时接入)，底层数据接入与平台交互实现(rabbitmq开源项目)，oracle数据库主备中心数据维护
+                            项目描述：通过TCPCopy组件实现的数据流复制，实现开发环境和生产环境的数据一致性测试和压力测试。通过海事平台提供的gps设备实现GPS数据接收和解析处理，提取坐标和预警信息，通过平台进行实时追踪
                         </p>
                     </li>
-					<li>
+					               <li>
                         <h3>安哥拉公共安全项目</h3>
                         <p> 软件环境：Liniux RedHat6.1、Windows 7 <br> <br>
-							开发工具：Eclipse <br> <br>	责任描述：现场实施，集群测试环境部署，现场授课，讲解项目整体实现以及使用手册，postgres数据库集群搭建，为开发和测试部署docker环境，现场github私有代码管理部署，其他时间负责linux系统运维实施 <br>
-                        </p>
-                        <p> AI人脸识别工程化，使用python端训练的模型进行前向识别，人脸识别采用mtcnn(112*112)进行检测，后续改进为retinaface(56*56)进行检测，使用5个关键点进行仿射变换，通过mxnet进行人脸特征提取和人脸相关属性的获取, 实现一帧2k图片 20ms的检测速度。
-                           改写人体追踪为人脸追踪，使用tensorflow模型，实现连续帧的人脸追踪，提高检测性能和友好性。
-                           工程化应用中，使用QT设计窗口集成人脸算法，实现实时识别。使用mongoos库实现HTTP检测服务，实现公司内部刷脸测温的算法支持。工程化中采用docker模式基本实现了快速部署演示的能力<br><br>
-                           计算机视觉中，用到 mxnet和tensorflow,TensorRT以及ncnn开源框架
+            							开发工具：Eclipse <br> <br>
+                          责任描述：现场实施，集群测试环境部署，现场授课，讲解项目整体实现以及使用手册，postgres数据库集群搭建，为开发和测试部署docker环境，现场github私有代码管理部署，其他时间负责linux系统运维实施 <br>
+
+                          项目描述：AI人脸识别工程化，使用python端训练的模型进行前向识别，人脸识别采用mtcnn(112*112)进行检测，后续改进为retinaface(56*56)进行检测，使用5个关键点进行仿射变换，通过mxnet进行人脸特征提取和人脸相关属性的获取, 实现一帧2k图片 20ms的检测速度。
+                          改写人体追踪为人脸追踪，使用tensorflow模型，实现连续帧的人脸追踪，提高检测性能和友好性。
+                          工程化应用中，使用QT设计窗口集成人脸算法，实现实时识别。使用mongoos库实现HTTP检测服务，实现公司内部刷脸测温的算法支持。工程化中采用docker模式基本实现了快速部署演示的能力<br><br>
+                          计算机视觉中，用到 mxnet和tensorflow,TensorRT以及ncnn开源框架
                         </p>
                     </li>
                     <li>
@@ -197,7 +204,7 @@
 							              开发工具：vscode <br> <br>
                             责任描述：组件架构设计，方案可行性验证，任务调度逻辑实现，开发和测试部署相关docker环境和镜像，gitLab私有代码库部署和管理<br><br>
 
-                            产品核心为AI识别工程化，使用c++对不同算法的模型进行集成，利用dockerfile生产算法镜像，通过k8s服务创建独立运行的算法容器，容器内部启动完整的任务调度、AI分析、视频编解码、分析结果和告警信息入库并推送代理服务、视频流二次推送。
+                            项目描述：产品核心为AI识别工程化，使用c++对不同算法的模型进行集成，利用dockerfile生产算法镜像，通过k8s服务创建独立运行的算法容器，容器内部启动完整的任务调度、AI分析、视频编解码、分析结果和告警信息入库并推送代理服务、视频流二次推送。
                             任务调度使用标准的protobuf协议对指令数据进行统一封装，通过kafka中间件实现数据中转，最终实现前后端数据实时处理<br><br>
 
                             1. 计算机视觉中，用到yolo开源框架<br>

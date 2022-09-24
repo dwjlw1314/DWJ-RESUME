@@ -125,14 +125,14 @@ hr {
 body {
     background-color: lightslategray;
     font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
-    zoom: 80%;
+    zoom: 100%;
 }
 
 footer {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 progress {
@@ -170,16 +170,16 @@ progress::-moz-progress-value {
 }
 
 .weixin{
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #e0eaf0;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
 }
 
 .weixin img{
-    width: 300px;
+    width: 352px;
 }
 
 .left-label_info {
@@ -236,8 +236,8 @@ progress::-moz-progress-value {
     position: relative;
     margin: 0 auto;
 
-    width: 1180px;
-    height: 3200px;
+    width: 1200px;
+    height: 4200px;
     background-color: white;
 
 }
@@ -246,7 +246,7 @@ progress::-moz-progress-value {
     position: absolute;
     width: 380px;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: #a7bbb973;
     padding-left: 13px;
     padding-right: 13px;
 }
