@@ -262,10 +262,9 @@
       language: (navigator.browserLanguage || navigator.language).toLowerCase()
     };
     const ua = navigator.userAgent.toLowerCase(); // 获取判断用的对象
-    var string = ua;
-    $('.container').html(string);
+
     // IE浏览器
-    if (ua.match(/edg/) != null) {
+    if (ua.match(/IE/) != null || ua.match(/edg/) != null) {
       $('.container').height(3550);
     }
     else if (ua.match(/chrome/) != null) {
