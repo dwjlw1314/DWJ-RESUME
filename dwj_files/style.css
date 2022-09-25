@@ -106,7 +106,6 @@ hr {
     font-size: 20px;
     padding: 6px;
     color: #666;
-
 }
 
 .remodal-img button {
@@ -140,7 +139,6 @@ progress {
     display: inline;
     /*width: 195px;*/
     height: 1em;
-
 }
 
 progress::-webkit-progress-bar {
@@ -237,9 +235,8 @@ progress::-moz-progress-value {
     margin: 0 auto;
 
     width: 1200px;
-    height: 3550px;
+    height: 4750px;
     background-color: white;
-
 }
 
 .side {
@@ -257,7 +254,6 @@ progress::-moz-progress-value {
     margin-left: 380px;
     min-height: 100%;
     padding: 10px;
-
 }
 
 .info-header:hover {
@@ -273,7 +269,6 @@ progress::-moz-progress-value {
     margin-left: 20px;
     visibility: hidden;
     cursor: pointer;
-
 }
 
 .info-header .item-add {
@@ -282,7 +277,6 @@ progress::-moz-progress-value {
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
-
 }
 
  .item-remove {
@@ -291,7 +285,6 @@ progress::-moz-progress-value {
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
-
 }
 
 ul li{
@@ -305,7 +298,6 @@ ul li{
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
-
 }
 
  .stack-list .item-remove {
@@ -315,5 +307,4 @@ ul li{
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
-
 }
