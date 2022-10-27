@@ -248,3 +248,20 @@ desc:
 ##__VA_ARGS__ 是一个可变参数的宏,是新的C99规范中新增的，目前似乎只有gcc支持（VC6.0的编译器不支持）
 宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用,否则会编译出错
 ```
+
+<font color=#FF0000 size=5> <p align="center">__attribute__ ((noinline))</p></font>
+
+code:
+```
+class A :public enable_shared_from_this<A>{
+public:
+    shared_ptr<A> getptr() __attribute__((noinline))
+    {
+        return shared_from_this();
+    }
+}
+```
+desc:
+```
+该属性用在类成员函数上，防止inline展开
+```
