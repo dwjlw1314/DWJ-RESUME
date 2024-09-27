@@ -3,6 +3,7 @@
 root@gjsy:~# cmake
 -D CMAKE_INSTALL_PREFIX=/opt
 -D BUILD_SHARED_LIBS=ON
+-D CMAKE_BUILD_TYPE=Debug   //编译可调式版本
 -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules
 -D WITH_CUDA=ON
 -D WITH_TBB=ON
@@ -86,4 +87,8 @@ CMake Error at CMakeLists.txt:40 (find_package):
   "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
   provides a separate development package or SDK, be sure it has been
   installed.
+```
+<font color=#FF0000 size=4> <p align="center">CMakeLists.txt文件汇总</p></font>
+```
+set(CUDA_TOOLKIT_ROOT_DIR /opt/cuda)     //设置cuda查找路径
 ```

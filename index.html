@@ -68,8 +68,8 @@
                     </li>
                     <li>
                         <label class="left-label">windows开发：</label>
-                        <progress value="20" max="100"></progress>
-						<label class="right-label">20%</label>
+                        <progress value="50" max="100"></progress>
+						<label class="right-label">50%</label>
                     </li>
                 </ul>
             </div>
@@ -127,14 +127,15 @@
 						               主要用到开源项目有redis，nginx，postgres，ffmpeg，live555，zeromq，rabbitmq，opencv</p>
                     </li>
                     <li>
-                        <h3>北京辰安科技有限公司 2019/8 – 2022/10</h3>
+                        <h3>北京辰安科技有限公司 2019/8 – 2024/10</h3>
                         <p>1. 森林火灾监控系统，主要负责接入无人机图像数据进行解析推送<br>
                            2. 人脸测温识别产品，主要负责摄像头图像数据接入，对人脸进行识别，推送特征值和人脸相关信息<br>
-                           3. 智能图像识别产品，主要负责对1.0版本进行项目上线适配修改，同时对原有版本进行重构，设计总体实现框架，公共组件和任务调度代码开发<br>
+                           3. 智能图像识别产品，主要设计总体实现框架，公共组件以及任务调度代码开发<br>
+                           4. AIbox只能算法盒子框架搭建，设备管理模块开发<br>
                         </p>
                     </li>
-					<li>
-                        <h3>北京新尖科技 2022/10 – 现在</h3>
+					          <li>
+                        <h3>北京新尖科技 2022/10 – 2023/12</h3>
                         <p>1. IABP 设备上位机整体功能设计和开发<br>
                            2. RK3568和OKT507 开发板系统裁减，提高开机速度。修改设备树适配不同显示屏<br>
                            3. 对心脏相关医学图像进行绘制，同时引入AI对心电、血压波形进行动态自动识别，辅助医护诊断<br>
@@ -188,7 +189,7 @@
                     </li>
                     <li>
                         <h3>sima视频接入模块</h3>
-                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br><br>
+                        <p> 软件环境：Linux RedHat6.1、Windows 7 <br><br>
 							开发工具：Eclipse、Visual Studio 2010 <br> <br>
                             责任描述：<br>
                             1. linux下负载均衡(nginx，keepalived)和分布式缓存(redis)的集群部署<br>
@@ -200,7 +201,7 @@
                     </li>
 					               <li>
                         <h3>ANT二期数据接入开发</h3>
-                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br><br>
+                        <p> 软件环境：Linux RedHat6.1、Windows 7 <br><br>
 							开发工具：Eclipse <br> <br>
                             责任描述：车载MDVR设备图像的接入，MDVR数据接入的二次开发(moduo库实现数据的实时接入)，底层数据接入与平台交互实现(rabbitmq开源项目)，oracle数据库主备中心数据维护
                             项目描述：通过TCPCopy组件实现的数据流复制，实现开发环境和生产环境的数据一致性测试和压力测试。通过海事平台提供的gps设备实现GPS数据接收和解析处理，提取坐标和预警信息，通过平台进行实时追踪
@@ -208,7 +209,7 @@
                     </li>
 					               <li>
                         <h3>安哥拉公共安全项目</h3>
-                        <p> 软件环境：Liniux RedHat6.1、Windows 7 <br> <br>
+                        <p> 软件环境：Linux RedHat6.1、Windows 7 <br> <br>
             				开发工具：Eclipse <br> <br>
                           责任描述：现场实施，集群测试环境部署，现场授课，讲解项目整体实现以及使用手册，postgres数据库集群搭建，为开发和测试部署docker环境，现场github私有代码管理部署，其他时间负责linux系统运维实施 <br>
 
@@ -220,9 +221,9 @@
                     </li>
                     <li>
                         <h3>AI智能分析系统</h3>
-                        <p> 软件环境：Liniux ubuntu18.04<br> <br>
+                        <p> 软件环境：Linux ubuntu18.04<br> <br>
 							开发工具：vscode <br> <br>
-                            责任描述：系统架构设计，方案可行性验证，开发进度管控、任务调度逻辑实现，开发和测试部署相关docker环境和镜像，gitLab私有代码库部署和管理<br><br>
+                            责任描述：系统架构设计，二期方案重构以及可行性验证，开发进度管控、任务调度逻辑实现，开发和测试部署相关docker环境和镜像，gitLab私有代码库部署和管理<br><br>
 
                             项目描述：产品核心为AI识别工程化，使用c++对不同算法的模型进行集成，利用dockerfile生产算法镜像，通过k8s服务创建独立运行的算法容器，容器内部启动完整的任务调度、AI分析、视频编解码、分析结果和告警信息入库并推送代理服务、视频流二次推送。
                             任务调度使用标准的protobuf协议对指令数据进行统一封装，通过kafka中间件实现数据中转，最终实现前后端数据实时处理<br><br>
@@ -230,6 +231,20 @@
                             1. 计算机视觉中，用到yolo开源框架<br>
                             2. 视频编解码使用ffmpeg拉流+nvidia硬编解码<br>
                             3. 代理服务器使用zeromq框架搭建
+                        </p>
+                    </li>
+                    <li>
+                        <h3>AIBOX智能盒子算法分析服务</h3>
+                        <p> 软件环境：Linux ubuntu20.04<br> <br>
+              开发工具：vscode <br> <br>
+                            责任描述：系统架构设计，设备管理模块开发，测试整体服务合理性<br><br>
+
+                            项目描述：产品核心为AIBOX算法工程化落地，使用c++对不同算法的模型进行集成，通过内置http服务接收任务消息，启动视频编解码、AI分析、分析结果和告警信息入库并推送nats
+                            同时对设备资源进行收集，管理以及服务调度<br><br>
+
+                            1. 设备资源收集与管理<br>
+                            2. http通信服务<br>
+                            3. 算法纳管
                         </p>
                     </li>
                 </ul>
@@ -240,15 +255,15 @@
                 <ul class="experience-list">
                     <li>
                         <p> 1. 熟练掌握掌握C/C++/，以及常用的数据结构和基本算法，具有10年的开发经验 <br>
-							2. 掌握Linux下应用程序的开发过程，具有良好的编程风格<br>
-							3. 掌握OSI七层协议，熟悉串口和socket网络编程<br>
-							4. 掌握Visual Studio、eclipse C++、Slick Edit、QT Creator等开发工具的使用<br>
-							5. 熟悉QT与QML开发技术<br>
-							6. 熟悉docker容器化部署和运维<br>
-							7. 熟悉postgresql以及oracle数据库<br>
-							8. 熟悉嵌入式平台开发过程<br>
-							9. 熟悉linux系统下的redis+nginx+keepalived高可用分布式服务维护
-							10.熟悉cuda相关的深度学习
+              							2. 掌握Linux下应用程序的开发过程，具有良好的编程风格<br>
+              							3. 掌握OSI七层协议，熟悉串口和socket网络编程<br>
+              							4. 掌握Visual Studio、eclipse C++、Slick Edit、QT Creator等开发工具的使用<br>
+              							5. 熟悉QT与QML开发技术<br>
+              							6. 熟悉docker容器化部署和运维<br>
+              							7. 熟悉postgresql以及oracle数据库<br>
+              							8. 熟悉嵌入式平台开发过程<br>
+              							9. 熟悉linux系统下的redis+nginx+keepalived高可用分布式服务维护
+              							10.熟悉cuda相关的深度学习
                         </p>
                     </li>
 
@@ -267,10 +282,10 @@
 
     // IE浏览器
     if (ua.match(/ie/) != null || ua.match(/edg/) != null) {
-      $('.container').height(3550);
+      $('.container').height(4000);
     }
     else if (ua.match(/chrome/) != null) {
-      $('.container').height(4750);
+      $('.container').height(5000);
     }
     // 其他浏览器
     else {
